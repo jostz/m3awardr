@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+      	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes"/>
+        <title>m3awardr - Login</title>
+        <script>
+            var frob;
+            if(document.URL.match("frob")){
+                frob=document.URL.slice(document.URL.search("frob")+5);
+                window.opener.postMessage(frob,"*");
+            }
+        </script>
+    </head>
+    <body>
+        Einloggen...
+    </body>
+</html>
